@@ -1,7 +1,7 @@
 /* Viet Nguyen*/
 
 #include <stdio.h>
-#include <glut.h> 
+#include <GL/glut.h> 
 #include <math.h>
 
 #define CANVAS_WIDTH 640
@@ -437,7 +437,7 @@ void bezMenu(int value)
 void draw_bezier()
 {
 	int i;
-	clicks == 0;
+	clicks = 0;
 	GLfloat ctrlPoints[4][3] = {
 		{ bx1,by1,0 },{ bx2,by2,0 },{ bx3,by3,0 },{ bx4,by4,0 } };
 	glShadeModel(GL_FLAT);
